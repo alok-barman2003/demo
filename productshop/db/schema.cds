@@ -1,12 +1,19 @@
 namespace sap.cap.productshop;
 
-entity Product
+aspect carbonemission {
+    emission : Integer;
+    rating : String;
+}
+type pricecost {
+    price : Integer;
+    stock : Integer;
+}
+entity Product : carbonemission   
 {
     key ID : Integer;
     name : String(100);
-    stock : Integer;
-    price : String(100);
     category : String(100);
+    cost : pricecost;
     supplier : Association to one Supplier;
 }
 

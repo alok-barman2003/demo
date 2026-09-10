@@ -1,3 +1,19 @@
 # GET http://localhost:4004/odata/v4/product-shop/Product
 
-GET http://localhost:4004/odata/v4/product-shop/Supplier
+# GET http://localhost:4004/odata/v4/product-shop/Supplier
+
+
+GET http://localhost:4004/odata/v4/product-shop/Product
+
+# Content-Type: application/json
+
+#     {
+#       "emission": 32000,
+#       "rating": "A+",
+#       "ID": 5,
+#       "name": "Maruti",
+#       "category": "5",
+#       "cost_price": 2322,
+#       "cost_stock": 12,
+#       "supplier_ID": "101"
+#     }
