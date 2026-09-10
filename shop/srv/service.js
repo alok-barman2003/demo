@@ -35,5 +35,32 @@ module.exports = cds.service.impl(async function (srv) {
         return result;
 
     })
+
+    srv.on('agelimit', req => {
+
+        const age= req.data.age;
+
+        if (age>=18){
+
+            return 'Eligible to vote.';
+
+        } else {
+
+            return 'Not  eligible to vote.';
+        }
+
+    })
+
+    srv.on('checkEvenOdd', req => {
+
+        const value= req.data.nums;
+
+        if (value % 2 == 0){
+            return 'The given number is even.';
+        } else {
+            return 'The given number is odd.';
+        }
+
+    })
     
 })

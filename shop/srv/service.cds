@@ -8,5 +8,9 @@ service product {
     @open
     type object{};
     function myfunction(category: Integer) returns object;
+
+    function agelimit(age: Integer) returns Integer;
+
+    function checkEvenOdd(nums: Integer) returns String;
     
 }

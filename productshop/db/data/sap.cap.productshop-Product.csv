@@ -1,0 +1,4 @@
+ID,name,stock,price,category,supplier_ID
+1,BMW,3,1200,1,101
+2,Audi,19,2780,2,101
+3,Hyundai,39,1000,3,101
